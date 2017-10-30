@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Descriptions:
+ * Descriptions: JdbcTemplate 操作数据库
  *
  * Created by liuguoquan on 2017/10/24.
  */

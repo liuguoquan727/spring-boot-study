@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Descriptions:
+ * Descriptions: 读取 application.properties 配置文件
  *
  * Created by liuguoquan on 2017/10/30.
  */
