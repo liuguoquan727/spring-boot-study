@@ -12,9 +12,9 @@ public class Student implements Serializable {
 
   private static final long serialVersionUID = 6816204218437248771L;
 
-  private int id;
+  private String id;
   private String name;
-  private int age;
+  private String age;
   private String sex;
 
   public String getName() {
@@ -25,11 +25,11 @@ public class Student implements Serializable {
     this.name = name;
   }
 
-  public int getAge() {
+  public String getAge() {
     return age;
   }
 
-  public void setAge(int age) {
+  public void setAge(String age) {
     this.age = age;
   }
 
@@ -41,11 +41,11 @@ public class Student implements Serializable {
     this.sex = sex;
   }
 
-  public int getId() {
+  public String getId() {
     return id;
   }
 
-  public void setId(int id) {
+  public void setId(String id) {
     this.id = id;
   }
 }

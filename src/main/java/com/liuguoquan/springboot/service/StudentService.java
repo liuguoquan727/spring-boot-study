@@ -10,8 +10,8 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
 /**
- * Descriptions:
- * http://blog.csdn.net/catoop/article/details/50507516
+ * Descriptions: http://blog.csdn.net/catoop/article/details/50507516
+ *
  * Created by liuguoquan on 2017/10/26.
  */
 
@@ -26,12 +26,17 @@ public class StudentService {
     return jdbcTemplate.query(sql, new RowMapper<Student>() {
       @Override public Student mapRow(ResultSet resultSet, int i) throws SQLException {
         Student student = new Student();
-        student.setId(resultSet.getInt("id"));
+        student.setId(resultSet.getString("id"));
         student.setName(resultSet.getString("name"));
-        student.setAge(resultSet.getInt("age"));
+        student.setAge(resultSet.getString("age"));
         student.setSex(resultSet.getString("sex"));
         return student;
       }
     });
+  }
+
+  public void insert(Student student) {
+    jdbcTemplate.update("insert into student(name,age,sex) values(?,?,?)", student.getName(),
+        student.getAge(), student.getSex());
   }
 }

@@ -1,6 +1,8 @@
 # SpringBoot
 
+# 学习笔记
 
+* [https://github.com/liuguoquan727/notes/tree/master/java/SpringBoot](https://github.com/liuguoquan727/notes/tree/master/java/SpringBoot)
 
 # 学习资料
 
@@ -14,3 +16,4 @@
 * [梁桂钊 - Spring Boot 揭秘与实战 系列](http://blog.720ui.com/columns/springboot_all/)
 * [Spring Boot 系列博客](http://www.jianshu.com/p/f6738d2dcdbc)
 * [纯洁的微笑](http://www.ityouknow.com/)
+* [SpringBoot xixicat](https://segmentfault.com/a/1190000004316491)

@@ -1,11 +1,7 @@
 package com.liuguoquan.springboot.controller;
 
 import com.liuguoquan.springboot.bean.ConfigBean;
-import com.liuguoquan.springboot.bean.Student;
-import com.liuguoquan.springboot.mapper.StudentMapper;
-import com.liuguoquan.springboot.service.StudentService;
-import java.util.List;
-import org.mybatis.spring.annotation.MapperScan;
+import com.liuguoquan.springboot.bean.ConfigTestBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,24 +10,28 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Descriptions:
  *
- * Created by liuguoquan on 2017/10/24.
+ * Created by liuguoquan on 2017/10/30.
  */
 
 @RestController
-public class UserController {
-
+@RequestMapping("api/config")
+public class ConfigController {
   @Value("${username}")
   private String name;
   @Value("${slogan}")
   private String slogan;
 
   @Autowired ConfigBean configBean;
-  @Autowired StudentService mStudentService;
-  @Autowired StudentMapper mStudentMapper;
+  @Autowired ConfigTestBean configTestBean;
 
   @RequestMapping("/")
   public String index() {
     return name + slogan;
+  }
+
+  @RequestMapping("/test")
+  public String testConfig() {
+    return configTestBean.getName() + configTestBean.getSlogan();
   }
 
   @RequestMapping("/config")
@@ -43,24 +43,5 @@ public class UserController {
         + configBean.getSecret()
         + ":"
         + configBean.getUuid();
-  }
-
-  @RequestMapping("/list")
-  public List<Student> getList() {
-    return mStudentService.getStudents();
-  }
-
-  @RequestMapping("/get")
-  public List<Student> getStudents() {
-    return mStudentMapper.getStudents();
-  }
-
-  @RequestMapping("/insert")
-  public void insert() {
-    Student student = new Student();
-    student.setName("xu");
-    student.setAge(23);
-    student.setSex("female");
-    mStudentMapper.insert(student);
   }
 }
