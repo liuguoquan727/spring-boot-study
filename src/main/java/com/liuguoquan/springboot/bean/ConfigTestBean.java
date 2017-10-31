@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 /**
- * Descriptions:
+ * Descriptions: 自定义配置文件绑定
  *
  * Created by liuguoquan on 2017/10/24.
  */

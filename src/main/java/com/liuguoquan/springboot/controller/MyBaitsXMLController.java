@@ -1,7 +1,6 @@
 package com.liuguoquan.springboot.controller;
 
 import com.liuguoquan.springboot.bean.Student;
-import com.liuguoquan.springboot.mapper.StudentMapper;
 import com.liuguoquan.springboot.mapper.StudentXMLMapper;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -3,7 +3,7 @@ package com.liuguoquan.springboot.bean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
- * Descriptions:
+ * Descriptions: 默认配置文件application.properties绑定
  *
  * Created by liuguoquan on 2017/10/24.
  */
