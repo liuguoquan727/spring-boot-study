@@ -26,10 +26,10 @@ public interface StudentMapper {
   @Select("select * from student where id=#{id}")
   Student queryById(@Param("id") String id);
 
-  @Insert("insert into student(name,age,sex) values(#{name},#{age},#{sex})")
+  @Insert("insert into student(name,age,sex,address) values(#{name},#{age},#{sex},#{address})")
   void insert(Student stu);
 
-  @Update("update student set name=#{name},age=#{age},sex=#{sex} where id=#{id}")
+  @Update("update student set name=#{name},age=#{age},sex=#{sex},address=#{address} where id=#{id}")
   void update(Student stu);
 
   @Delete("delete from student where id=#{id}")

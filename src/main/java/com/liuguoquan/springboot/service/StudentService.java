@@ -30,13 +30,15 @@ public class StudentService {
         student.setName(resultSet.getString("name"));
         student.setAge(resultSet.getString("age"));
         student.setSex(resultSet.getString("sex"));
+        student.setAddress(resultSet.getString("address"));
         return student;
       }
     });
   }
 
   public void insert(Student student) {
-    jdbcTemplate.update("insert into student(name,age,sex) values(?,?,?)", student.getName(),
-        student.getAge(), student.getSex());
+    jdbcTemplate.update("insert into student(name,age,sex,address) values(?,?,?,?)",
+        student.getName(),
+        student.getAge(), student.getSex(), student.getAddress());
   }
 }

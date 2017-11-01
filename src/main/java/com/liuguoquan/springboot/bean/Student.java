@@ -15,6 +15,7 @@ public class Student implements Serializable {
   private String name;
   private String age;
   private String sex;
+  private String address;
 
   public String getName() {
     return name;
@@ -46,5 +47,13 @@ public class Student implements Serializable {
 
   public void setId(String id) {
     this.id = id;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
   }
 }

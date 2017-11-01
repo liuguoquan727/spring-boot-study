@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/rest")
 public class RestfulController {
 
-  private static final Logger mLogger = LogManager.getLogger(RestfulController.class);
+  private final Logger mLogger = LogManager.getLogger(RestfulController.class);
 
   @Autowired StudentMapper mMapper;
 
