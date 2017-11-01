@@ -2,7 +2,7 @@
 
 # 学习笔记
 
-* [https://github.com/liuguoquan727/notes/tree/master/java/SpringBoot](https://github.com/liuguoquan727/notes/tree/master/java/SpringBoot)
+* [https://github.com/liuguoquan727/notes/tree/master/java/springboot](https://github.com/liuguoquan727/notes/tree/master/java/springboot)
 
 # 学习资料
 
