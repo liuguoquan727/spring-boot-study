@@ -24,7 +24,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/rest")
 public class RestfulController {
 
-  private final Logger mLogger = LogManager.getLogger(RestfulController.class);
+  private final Logger mLogger =
+      LogManager.getLogger(RestfulController.class);
 
   @Autowired StudentMapper mMapper;
 
@@ -62,7 +63,8 @@ public class RestfulController {
    * POST 表单传参
    */
   @RequestMapping(method = RequestMethod.POST, path = "/post")
-  public Response testPost(HttpServletRequest request, @RequestParam(name = "userId") String id) {
+  public Response testPost(HttpServletRequest request,
+      @RequestParam(name = "userId") String id) {
     Student student = mMapper.queryById(id);
     Response<Student> response = new Response<>();
     if (student != null) {
@@ -78,7 +80,8 @@ public class RestfulController {
    * POST Body传参
    */
   @RequestMapping(method = RequestMethod.POST, path = "/insert")
-  public Response testPostBody(HttpServletRequest request, @RequestBody Student student) {
+  public Response testPostBody(HttpServletRequest request,
+      @RequestBody Student student) {
     Response response = new Response();
     try {
       mMapper.insert(student);
