@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.liuguoquan.springboot.mapper")
-public class SpringbootApplication {
+public class RestfulApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootApplication.class, args);
+		SpringApplication.run(RestfulApplication.class, args);
 	}
 }
