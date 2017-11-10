@@ -3,7 +3,7 @@
 # 目录
 
 * springboot-start-quick 第一个应用
-* springboot-config-xml 配置文件解析
+* springboot-properties 配置文件解析
 * springboot-mysql-jdbctemplate jdbctemplate 操作 mysql
 * springboot-mysql-mybatis mybatis 操作 sql
 * springboot-restful pringBoot 提供 Restful 服务
