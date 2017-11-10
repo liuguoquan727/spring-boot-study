@@ -17,3 +17,4 @@
 * [Spring Boot 系列博客](http://www.jianshu.com/p/f6738d2dcdbc)
 * [纯洁的微笑](http://www.ityouknow.com/)
 * [SpringBoot xixicat](https://segmentfault.com/a/1190000004316491)
+* [https://github.com/JeffLi1993/springboot-learning-example](https://github.com/JeffLi1993/springboot-learning-example)
