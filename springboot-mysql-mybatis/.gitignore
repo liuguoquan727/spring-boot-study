@@ -14,8 +14,11 @@ target/
 *.iws
 *.iml
 *.ipr
-/target
-/.idea
-/.mvn
-mvnw
-mvnw.cmd
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
